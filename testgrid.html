@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+   html,body{
+     padding:0;
+     margin: 0;
+   }
+    #grid-container{
+      display: grid;
+      grid-template-columns: 300px 1fr 300px;
+     }
+    #grid-container .grid-items{
+      padding:25px;
+      text-align:center;
+    }
+    #grid-container .header{
+      background: #b03532;
+      grid-column: 1 / 4;
+    }
+    #grid-container .nav{
+      background: #33a8a5;
+      grid-row:2/3;
+    }
+    #grid-container .container{
+      background: #30997a;
+      grid-column: 2 / 3;
+    }
+    #grid-container .aside{
+      background: #6a478f;
+    }
+    #grid-container .footer{
+      background: #da6f2b;
+      grid-column: 1 / 4;
+    }
+  </style>
+</head>
+<body>
+    <div id="grid-container">
+      <div class="grid-items header">Header</div>
+      <div class="grid-items container">Container<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/></div>
+      <div class="grid-items nav">Nav</div>
+      <div class="grid-items aside">Aside</div>
+      <div class="grid-items footer">Footer</div>
+    </div>
+</body>
+</html>

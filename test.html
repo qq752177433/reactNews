@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #flex-container{
+      display: flex;
+      flex-direction: column;
+    }
+    #flex-container .header,#flex-container .footer{
+      padding: 25px;
+    }
+    #flex-container .header{
+      background: #b03532;
+    }
+    #flex-container .footer{
+      background: #da6f2b;
+    }
+    #flex-container .container{
+      display: flex;
+    }
+    #flex-container .container div{
+      padding: 25px
+    }
+    #flex-container .container .nav{
+      background: #33a8a5;
+      width: 300px;
+      order:-1;
+    }
+    #flex-container .container .main{
+      background: #30997a;
+      flex:1;
+    }
+    #flex-container .container .aside{
+      background: #6a478f;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="flex-container">
+      <div class="header">Header</div>
+      <div class="container">
+        <div class="flex-items main">Container<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/>我是内容<br/></div>
+        <div class="flex-items nav">Nav</div>
+        <div class="flex-items aside">Aside</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
