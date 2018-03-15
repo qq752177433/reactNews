@@ -13,3 +13,20 @@
 .footer{
   text-align: center;
 }
+.register{
+  float:right !important;
+}
+.register>#personInfo{
+  display: inline;
+}
+.leftContainer{
+  width:400px;
+  float: left;
+}
+.container {
+  padding:10px
+}
+.carousel{
+  width: 400px;
+  float: left;
+}
