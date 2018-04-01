@@ -93,7 +93,7 @@ export default class PCUserCenter extends React.Component {
         <Col span={20}>
           <Tabs>
             <TabPane tab="我的收藏列表" key="1">
-              <div class="commit">
+              <div className="commit">
                 <Row>
                   <Col span={24}>
                     {usercollectionList}
@@ -102,7 +102,7 @@ export default class PCUserCenter extends React.Component {
               </div>
             </TabPane>
             <TabPane tab="我的评论列表" key="2">
-              <div class="commit">
+              <div className="commit">
                 <Row>
                   <Col span={24}>
                     {usercommentsList}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Link} from 'react-router-dom';
 import {Row, Col} from 'antd';
 import {
   Menu,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Link} from 'react-router-dom';
 import {Row, Col} from 'antd';
 import {
   Menu,
@@ -81,7 +81,7 @@ class PCHeader extends React.Component {
   render() {
     const {getFieldDecorator} = this.props.form;
     const userShow = this.state.hasLogined
-      ? <Menu.Item key="logout" class="register">
+      ? <Menu.Item key="logout" className="register">
           <Button type="primary" htmlType="button">{this.state.userNickName}</Button>
           &nbsp; &nbsp;
           <Link id="personInfo" target="_blank" to={`/usercenter`}>
@@ -89,15 +89,15 @@ class PCHeader extends React.Component {
           </Link>
           <Button type="ghost" htmlType="button" onClick={this.loginout.bind(this)}>退出</Button>
         </Menu.Item>
-      : <Menu.Item key="register" class="register">
+      : <Menu.Item key="register" className="register">
         <Icon type="appstore"/>注册/登录
       </Menu.Item>;
     return (<header>
       <Row>
         <Col span={2}></Col>
         <Col span={4}>
-          <a href="/" class="logo">
-            <img src="./src/images/logo.png" alt="logo"/>
+          <a href="/" className="logo">
+            <img src="/src/images/logo.png" alt="logo"/>
             <span>ReactNews</span>
           </a>
         </Col>

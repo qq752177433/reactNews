@@ -3,6 +3,9 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true
+  },
   context: path.join(__dirname),
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./src/js/root.js",
@@ -14,7 +17,7 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015'],
-          plugins: ['react-html-attrs'], //添加组件的插件配置
+          plugins: [['react-html-attrs'],["import", { libraryName: "antd", style: "css" }]], //添加组件的插件配置
         }
       },
       //下面是使用 ant-design 的配置文件
